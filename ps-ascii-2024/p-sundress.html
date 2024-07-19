@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Raquel Emillene">
+        <link rel="stylesheet" href="assets/css/estilo.css">
+        <link rel="icon" type="image-png" href="assets/img/logo-titulo.png">
+        <title>Élever - Sundress</title>
+    </head>
+<body class="corpo-geral">
+    <!--Seção header, cabeçalho, com a logo e as opções de navegação-->
+    <header class="heading">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <nav class="navegacao">
+            <ul class="menu-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#caixa-sobre">Sobre Nós</a></li>
+                <li><a href="index.html#caixa-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--MENU PARA TELAS PEQUENAS-->
+    <header class="telas-pequenas">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <div class="menu-telas-peq">
+            <a class="btn-menu-peq" href="#">
+                <img src="assets/img/menu.png" alt="Ícone que representa um menu.">
+            </a>
+            <div class="menu-peq-conteudo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="index.html#caixa-sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#caixa-contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="produto-box">
+            <!--Area para a foto do produto-->
+            <div class="foto-produto">
+                <img src="assets/img/produtos-femininos/vestido.jpg" alt="">
+            </div>
+            <!--Area com as informações do produto-->
+            <div class="info-produto">
+                <h2>Short Linho</h2>
+                <h3 class="preco-prod">R$124,90</h3>
+                <!--Descrição do produto-->
+                <div class="descricao">
+                    <h4>Descrição</h4>
+                    <p>Com um design leve e descontraído, este sundress é a escolha perfeita para os dias ensolarados. 
+                        O decote delicadamente franzido e as alças ajustáveis garantem um ajuste perfeito, enquanto a saia ampla proporciona liberdade de movimento e um toque feminino.
+                        Este vestido adiciona um charme despreocupado ao seu guarda-roupa de verão, seja para um passeio à beira-mar, um brunch ao ar livre ou uma tarde de compras sob o sol.
+                    </p>
+                </div>
+                <!--Formulario compra-->
+                <div class="selecao-compra">
+                    <form id="selecao-form" class="selecao" action="finalizacao.html" method="get">
+                        <div class="selecao-tamanho">
+                            <h4>Escolher Tamanho:</h4>
+                            <input type="radio" name="tamanho" value="P" alt="Pequeno">
+                            <input type="radio" name="tamanho" value="M" alt="Médio">
+                            <input type="radio" name="tamanho" value="G" alt="Grande">
+                        </div>
+                        <div class="selecao-cor">
+                            <h4>Escolher Cor:</h4>
+                            <input type="radio" name="cor" value="Verde Oliva">
+                            <input type="radio" name="cor" value="Vermelho">
+                            <input type="radio" name="cor" value="Branco">
+                        </div>
+                        <div class="selecao-quantidade">
+                            <h4>Quantidade:</h4>
+                            <input type="number" name="quantidade" id="qtd" value="1">
+                        </div>
+                    </form>
+                </div>
+                <!--Detalhes gerais-->
+                <div class="detalhes">
+                    <p class="detalhe-titulo">+ Detalhes</p>
+                    <div class="tabela-detalhes">
+                        <div class="det-titulos">
+                            <p>Estilo:</p>
+                            <p>Estampa:</p>
+                            <p>Comprimento:</p>
+                            <p>Tecido:</p>
+                            <p>Temperatura:</p>
+                            <p>Instruções de manutenção:</p>
+                        </div>
+                        <div class="explicacoes">
+                            <p>Casual</p>
+                            <p>Bloco de cores</p>
+                            <p>Curto</p>
+                            <p>Algodão</p>
+                            <p>Primavera/Verão</p>
+                            <p>Lavar à mão, não lavar a seco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-comprar">
+                    <button type="submit" form="selecao-form">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>© 2024 Élever Couture. Todos os direitos reservados.</p>
+    </footer>
+    <!--Adição do javascrip-->
+    <script src="assets/javascript/index.js"></script>
+</body>
+</html>

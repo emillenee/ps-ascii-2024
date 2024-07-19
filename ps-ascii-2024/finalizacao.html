@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Raquel Emillene">
+        <link rel="stylesheet" href="assets/css/estilo.css">
+        <link rel="icon" type="image-png" href="assets/img/logo-titulo.png">
+        <title>Finalização de pedido - Élever Couture</title>
+    </head>
+<body class="corpo-geral">
+    <!--Sessão header da página-->
+    <header class="heading">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <nav class="navegacao">
+            <ul class="menu-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#caixa-sobre">Sobre Nós</a></li>
+                <li><a href="index.html#caixa-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Header alternativa para telas pequenas-->
+    <header class="telas-pequenas">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <div class="menu-telas-peq">
+            <a class="btn-menu-peq" href="#">
+                <img src="assets/img/menu.png" alt="Ícone que representa um menu.">
+            </a>
+            <div class="menu-peq-conteudo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#produtos">Produtos</a></li>
+                    <li><a href="index.html#caixa-sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#caixa-contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Seção principal da página-->
+    <main class="principal">
+        <section class="finalizar">
+            <!--Div com o formulário-->
+            <div class="info-entrega">
+                <img src="assets/img/carrinho.png" alt="">
+                <h2>Finalização de Pedido</h2>
+                <p>Preencha os dados abaixo:</p>
+                <!--Formulário a ser preenchido pelo usuário com as informações de entrega-->
+                <form id="form-entrega" class="entrega" action="index.html">
+                    <input type="text" name="nome-comprador" id="nome-comprador" placeholder="Nome Completo" required>
+                    <input type="text" name="cep" id="cep-entrega" placeholder="CEP" required>
+                    <input type="text" name="endereco-entrega" id="endereco" placeholder="Endereço" required>
+                    <input type="number" name="numero" id="numero-entrega" placeholder="Número" required>
+                    <input type="text" name="complemento-entrega" id="complemento" placeholder="Complemento">
+                    <input type="text" name="bairro" id="bairro-entrega" placeholder="Bairro" required>
+                    <input type="text" name="cidade" id="cidade-entrega" placeholder="Cidade" required>
+                    <input type="text" name="estado" id="estado-entrega" placeholder="Estado" required>
+                    <!--Botão de finalizar compra-->
+                    <button type="submit" form="form-entrega">Finalizar Compra</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--Seção footer-->
+    <footer class="rodape">
+        <p>© 2024 Élever Couture. Todos os direitos reservados.</p>
+    </footer>
+    <!--Adição do javascrip-->
+    <script src="assets/javascript/index.js"></script>
+</body>
+</html>

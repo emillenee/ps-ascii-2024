@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Emillene">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="icon" type="image-png" href="assets/img/logo-titulo.png">
+    <title>Élever Couture</title>
+</head>
+<body class="corpo-geral">
+    <!--Seção header, cabeçalho, com a logo e as opções de navegação-->
+    <header class="heading">
+        <!--Div para conter a logo-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <!--Tag de navegação, contendo as opções do menu-->
+        <nav class="navegacao">
+            <ul class="menu-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#caixa-sobre">Sobre Nós</a></li>
+                <li><a href="#caixa-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Header alternativa para telas pequenas-->
+    <header class="telas-pequenas">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png">
+            </a>
+        </div>
+        <!--Menu do tipo dropdown, as opções só aparecerem quando clicar no ícone de menu-->
+        <div class="menu-telas-peq">
+            <a class="btn-menu-peq" href="#">
+                <img src="assets/img/menu.png" alt="Ícone que representa um menu.">
+            </a>
+            <div class="menu-peq-conteudo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#caixa-sobre">Sobre Nós</a></li>
+                    <li><a href="#caixa-contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="principal">
+        <!--Seção do banner principal-->
+        <section class="banner-principal">
+            <!--Link que leva para os produtos já separados por desconto-->
+            <a href="#produtos">
+                <img src="assets/img/Items-desconto.png" alt="Produtos com desconto" class="banner-desconto">
+            </a>
+        </section>
+        <!--Seção de produtos-->
+        <section class="caixa-produtos" id="produtos">
+            <h2>Produtos</h2>
+            <div class="conteiner-secao-produtos">
+                <!--Barra de filtragem-->
+                <div class="filtros">
+                    <p>Filtrar por</p>
+                    <button class="btnFiltro ativo" onclick="filterElements('todos')">Todos</button>
+                    <button class="btnFiltro btnPromo" onclick="filterElements('promocao')">Promoção</button>
+                    <button class="btnFiltro" onclick="filterElements('feminino')">Feminino</button>
+                    <button class="btnFiltro" onclick="filterElements('masculino')">Masculino</button>
+                    <p>Coleções</p>
+                    <button class="btnFiltro" onclick="filterElements('inverno')">Inverno</button>
+                    <button class="btnFiltro" onclick="filterElements('verao')">Verão</button>
+                </div>
+                <!--Caixa com as divs individuais dos produtos-->
+                <div class="conteiner-produtos">
+                    <div class="produto mostrar promocao feminino">
+                        <img class="imagem-prod" src="assets/img/produtos-femininos/cropped-regata-feminina.jpg" alt="Mulher vestindo uma regata cropped">
+                        <h3>Regata Cropped Básica</h3>
+                        <p>Feita em malha canelada com alta elasticidade, a regata cropped se ajusta confortavelmente ao corpo.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco desconto">20% OFF<br>R$47,92</p>
+                        </div>
+                        <a href="p-regata-cropped-basica.html">Ver Detalhes</a>
+                    </div>
+                    <div class="produto mostrar promocao masculino">
+                        <img class="imagem-prod" src="assets/img/produtos-masculinos/blusa-masculina-basica.jpg" alt="Homem tatuado vestindo uma blusa branca">
+                        <h3>Camiseta Lisa</h3>
+                        <p>Uma camiseta de gola redonda e feita de um tecido leve e confortável.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco desconto">10% OFF<br>R$62,91</p>
+                        </div>
+                        <a href="p-camiseta-lisa.html">Ver Detalhes</a>
+                    </div>
+                    <div class="produto mostrar feminino verao">
+                        <img class="imagem-prod" src="assets/img/produtos-femininos/short-verao.jpg" alt="Um short para usar no verão">
+                        <h3>Short Linho</h3>
+                        <p>Short cintura alta, uma opção confortável e estilosa para os dias quentes de verão.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco">R$119,89</p>
+                        </div>
+                        <a href="p-short-linho.html">Ver Detalhes</a>
+                    </div>
+                    <div class="produto mostrar feminino verao">
+                        <img class="imagem-prod" src="assets/img/produtos-femininos/vestido.jpg" alt="Um vestido verde">
+                        <h3>Sundress</h3>
+                        <p>Com um design leve e descontraído, esse vestido é perfeito para dias ensolarados.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco">R$124,90</p>
+                        </div>
+                        <a href="p-sundress.html">Ver Detalhes</a>
+                    </div>
+                    <div class="produto mostrar feminino inverno">
+                        <img class="imagem-prod" src="assets/img/produtos-femininos/jaqueta-feminina.jpg" alt="Mulher vestindo uma jaqueta de couro">
+                        <h3>Jaqueta Couro Clássica</h3>
+                        <p>Elegante e feita com couro de alta qualidade, essa jaqueta oferece durabilidade e conforto.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco">R$579,90</p>
+                        </div>
+                        <a href="p-jaqueta-couro.html">Ver Detalhes</a>
+                    </div>
+                    <div class="produto mostrar promocao masculino inverno">
+                        <img class="imagem-prod" src="assets/img/produtos-masculinos/calca-masculina.jpg" alt="Calça cargo de modelo masculino">
+                        <h3>Calça Cargo</h3>
+                        <p>Uma calça de algodão resistente, possui um corte relaxado que contribui para um estilo urbano.</p>
+                        <div class="centralizar-preco">
+                            <p class="preco desconto">30% OFF<br>R$160,93</p>
+                        </div>
+                        <a href="p-calca-cargo.html">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seção Sobre-->
+        <section class="sobre" id="caixa-sobre">
+            <div class="card-sobre">
+                <div>
+                    <h2>Sobre a Élever Couture</h2>
+                </div>
+                <!--Divs com os textos sobre a loja-->
+                <div class="partes-sobre">
+                    <div class="texto-sobre">
+                        <h3>Qual a nossa história?</h3>
+                        <p>"Uma idealizadora residente de Recife, afetada pela pandemia, encontrou na sua paixão por moda uma oportunidade de enfrentar desafios financeiros. 
+                            Superando obstáculos como problemas técnicos e logísticos, construiu uma marca reconhecida não apenas por sua moda elegante e moderna, mas também por seu compromisso com a sustentabilidade."
+                        </p>
+                    </div>
+                    <img src="assets/img/rua-bom-jesus.jpg" alt="">
+                </div>
+                <div class="partes-sobre">
+                    <div class="texto-sobre missao">
+                        <h3>A missão da Élever:</h3>
+                        <p>A missão da Élever vai além de simplesmente oferecer moda; a marca busca promover uma conexão genuína entre as pessoas e a cultura de Recife através de suas coleções. 
+                            A marca se dedica a proporcionar não apenas roupas de qualidade, mas também a contar histórias através de cada peça. 
+                            Éleve visa inspirar seus clientes a expressarem sua individualidade com estilo e consciência, enquanto contribui positivamente para o desenvolvimento econômico e cultural da comunidade pernambucana.</p>
+                    </div>
+                </div>
+                <div class="partes-sobre">
+                    <img src="assets/img/roupas.jpg" alt="">
+                    <div class="texto-sobre">
+                        <h3>Quais são os nossos valores?</h3>
+                        <p>A marca está comprometida com práticas sustentáveis e éticas em todos os aspectos de sua operação, desde a seleção dos materiais até a relação com seus fornecedores e clientes. 
+                            Ao oferecer produtos que não apenas vestem, mas também contam histórias e promovem um impacto positivo, a Éleve busca inspirar uma moda consciente e responsável, refletindo seu compromisso com a comunidade e o meio ambiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seção de contato-->
+        <section class="contato" id="caixa-contato">
+            <div class="card-contato">
+                <h2>Métodos de Contato</h2>
+                <p>Redes Sociais:</p>
+                <a href="https://github.com/emillenee" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/emillene_/" target="_blank">Instagram</a>
+                <p>Email:</p>
+                <p class="email-contato">sxemillene@gmail.com</p>
+            </div>
+        </section>
+    </main>
+    <!--Seção footer, rodapé da página com informação sobre copright-->>
+    <footer class="rodape">
+        <p>© 2024 Élever Couture. Todos os direitos reservados.</p>
+    </footer>
+    <!--Adição do javascrip-->
+    <script src="assets/javascript/index.js"></script>
+</body>
+</html>
